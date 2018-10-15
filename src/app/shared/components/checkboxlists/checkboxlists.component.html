@@ -1,0 +1,17 @@
+<div [formGroup]="checkboxForm">
+  <div formArrayName="listArray">
+    <strong *ngIf="hasAllCheckedText">
+      <mat-checkbox
+        [checked]="toggleSelected"
+        (change)="toggleSelection($event)">{{allSelectDefaultText}}
+      </mat-checkbox>
+    </strong>
+
+    <div *ngFor="let data of checkboxForm.get('listArray').controls; let i = index">
+      <mat-checkbox
+        [formControlName]="i"
+        (change)="changeStatusItem(status, i)">{{list[i].label}}
+      </mat-checkbox>
+    </div>
+  </div>
+</div>

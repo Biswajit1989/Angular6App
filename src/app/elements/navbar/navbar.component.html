@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Kundeportal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul *ngIf="checkorgStorageData" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">{{ 'top-menu.home' | fmsText }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/member/search">{{ 'top-menu.member' | fmsText }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'top-menu.ajour_hold' | fmsText }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'top-menu.document' | fmsText }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'top-menu.settlement' | fmsText }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">{{ 'top-menu.home' | fmsText }}</a>
+        </li>
+      </ul>
+    </div>
+    <button (click)="doLogout()" class="btn btn-primary">{{ 'top-menu.logout' | fmsText }}</button>
+  </div>
+</nav>

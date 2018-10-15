@@ -1,0 +1,8 @@
+{
+    "/pension-customer-rest-api/*": {
+        "target": "http://localhost:12250",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

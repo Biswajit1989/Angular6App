@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-10 order-lg-1">
+      <div class="p-5">
+        <!-- <a (click)="getCookieData()">Get Cookie</a>
+        <a (click)="setCookieData()">Set Cookie</a> -->
+
+        <!-- <button (click)="increment()">Increment</button>
+        <div>Current Count: {{ counter | async }}</div>
+        <button (click)="decrement()">Decrement</button>
+        <button (click)="reset()">Reset Counter</button> -->
+        <h3 class="display-5">{{ 'organiser-listing.title' | fmsText }}</h3>
+        <div *ngIf="isLoading;else loadingComplete"><img src="assets/img/loader.svg" /></div>
+
+        <ng-template #loadingComplete>
+          <div *ngIf="orgLists.status">
+            <table mat-table [dataSource]="orgLists.result" class="mat-elevation-z8">
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="orgNo">
+                  <th mat-header-cell *matHeaderCellDef> {{ 'organiser-listing.list-data.org-number' | fmsText }}</th>
+                  <td mat-cell *matCellDef="let element"> {{element.organisationalData.orgNo}} </td>
+                </ng-container>
+        
+                <!-- Position Column -->
+                <ng-container matColumnDef="companyName">
+                  <th mat-header-cell *matHeaderCellDef> {{ 'organiser-listing.list-data.org-number' | fmsText }}</th>
+                  <td mat-cell *matCellDef="let element"> {{element.organisationalData.companyName}} </td>
+                </ng-container>
+        
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="action">
+                  <th mat-header-cell *matHeaderCellDef></th>
+                  <td mat-cell *matCellDef="let element"> 
+                    <div *ngIf="element.organisationalData.dbId > 0;else dbIdIsZero">
+                      <div *ngIf="element.organisationalData.asAccessLevel; else notAsAccessLevel">
+                        <ng-template #listsOfGroups>
+                          <ul>
+                            <li *ngFor="let grp of element.groupings">
+                              <a (click)="selectOrganisation(element.organisationalData, grp.groupNr)">{{grp.name}}</a>
+                            </li>
+                          </ul>
+                        </ng-template>
+                        <button type="button" class="btn btn-outline-secondary mr-2" placement="top"
+                          [ngbPopover]="listsOfGroups" popoverTitle="Popover on top">
+                          {{ 'organiser-listing.list-data.org-select-options' | fmsText }}
+                        </button>
+                      </div>
+                      <ng-template #notAsAccessLevel>
+                        <a class="btn btn-outline-secondary mr-2" (click)="selectOrganisation(element.organisationalData, 0)">{{ 'organiser-listing.list-data.org-select' | fmsText }}</a>
+                      </ng-template>
+                    </div>
+                    <ng-template #dbIdIsZero>-</ng-template>
+                  </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+          </div>
+          <div *ngIf="!orgLists.status">
+            <h3 class="text-danger">{{orgLists.error}}</h3>    
+          </div>
+        </ng-template>
+
+      </div>
+    </div>
+  </div>
+</div>

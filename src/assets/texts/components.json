@@ -1,0 +1,823 @@
+{
+  "welcome": {
+    "title": "Velkommen til Kundeportalen",
+    "change-organization": "Bytt organisasjon",
+    "body-html": "",
+    "customer-portal": "Kundeportalen",
+    "details-about": "Detaljer om"
+  },
+  "calender": {
+    "year": "år",
+    "month": "måneder",
+    "days": "dager",
+    "and": "og",
+    "todays-date": "Dags dato"
+  },
+  "top-menu": {
+    "not-found-ssn": "Ikke funnet",
+    "front": "Forside",
+    "logout": "Logg ut",
+    "home" : "Startside",
+    "member": "Medlemmer",
+    "people-search": "Personsøk",
+    "future-retirees": "Oversikt over kommende pensjonister",
+    "search-status-changes": "Søk på statusendringer",
+    "recording-members-period": "Opptak av medlemmer i en periode",
+    "payment-notes-sent": "Utbetalingsbrev sendt til medlemmene",
+    "ajour_hold": "Ajourhold",
+    "new-update": "Nytt ajourhold",
+    "upload-uni-file": "Last opp UNI-fil",
+    "posted-updates": "Se innsendt ajourhold",
+    "automatic-update": "Automatisk ajourhold",
+    "settlement": "Oppgjør",
+    "message-about-afp": "Melding om AFP",
+    "retirement-pension-notification": "Melding om alderspensjon",
+    "notification-age-85-year-rule": "Melding om alder ved 85-årsregelen",
+    "posted-updates-settlement": "Se innsendte meldinger",
+    "private-disability-notification": "Melding om uførepensjon",
+    "retirement-pension-notification-private": "Melding om alderspensjon",
+    "disability-notification": "Melding om uførepensjon",
+    "change-disability-notification": "Melding om endring i arbeidsuførhet",
+    "new-message-after-disability": "Friskmelding etter arbeidsuførhet",
+    "notification-death": "Melding om dødsfall",
+    "private-change-disability-notification": "Melding om endring i arbeidsuførhet",
+    "private-retirement-pension-notification": "Melding om alderspensjon",
+    "private-request": "Forespørsel",
+    "private-notification-death": "Melding om dødsfall",
+    "request": "Forespørsel",
+    "submitted-messages": "Se innsendte meldinger",
+    "document": "Dokumentarkiv",
+    "mailbox": "Postkasse",
+    "contact": "Kontakt",
+    "newone": "AB",
+    "admin": "Admin",
+    "manage-system-notifications": "Administrer systemmeldinger"
+  },
+  "organiser-listing": {
+    "title": "Din bruker er tilknyttet flere organisasjoner, velg en fra listen",
+    "body-html": "Kontakt pensjonskassen.",
+    "loading-text": "Laster .......",
+    "error-lists": "Kan ikke få arrangørlister",
+    "error-server-response": "Kan ikke få svar fra server",
+    "error-result": "Feil i resultatene",
+    "blank-search-info": "Søk på listen data",
+    "blank-search-customer-info": "Søk etter dine kunder",
+    "list-data": {
+      "org-number": "Organisasjonsnummer",
+      "org-name": "Organisasjonsnavn",
+      "org-action": "Handling",
+      "org-select": "Gå til",
+      "org-select-options": "Velg"
+    },
+    "no-access-msg": "Du har ikke tilgang til denne applikasjonene"
+  },
+  "validation-msg": {
+    "default-error-heading": "Vennligst gjør følgende feil",
+    "nin-error": "Fødselsnummer må være gyldig 11 siffer nummer",
+    "date-range-error": "Til dags dato må være større enn Fra dato",
+    "age-range-error": "Å alder må være større enn Fra alder"
+  },
+  "member": {
+    "people-search": {
+      "title": "Personsøk",
+      "body-html": "Kontakt pensjonskassen.",
+      "search-criteria": "Utvalgte søkekriterier",
+      "form-data": {
+        "select-all": "Velg alle",
+        "deselect-all": "Opphev alle",
+        "heading": "Filtrer ditt søk",
+        "personal-information": "Personinformasjon",
+        "surname": "Etternavn",
+        "national-identity": "Fødselsnummer",
+        "from-age": "Fra alder",
+        "to-age": "Til alder",
+        "has-d-number": "Har D -nummer",
+        "yes": "Ja",
+        "no": "Nei",
+        "status": "Status",
+        "all-status": "Alle statuser",
+        "enterprises": "Foretak",
+        "grouping": "Gruppering",
+        "order": "Ordning",
+        "all-groupings": "Alle grupperinger",
+        "only-active-in-grouping": "Kun aktive i gruppering",
+        "all-arrangements": "Alle ordninger",
+        "only-active-in-order": "Kun aktive i ordning",
+        "find-people": "Finn personer",
+        "remove-filter": "Fjern filter",
+        "from-date": "Fra dato",
+        "to-date": "Til dato",
+        "provision": "Ordning",
+        "from-status": "Fra status",
+        "to-status": "Til status",
+        "search-registered-date": "Søk på registrert dato",
+        "show-status-change": "Vis statusendringer",
+        "future-retire-search": "søk",
+        "searching": "søker....",
+        "loading": "Laster...."
+      },
+      "list-data": {
+        "national-identity": "Fødselsnummer",
+        "age": "Alder",
+        "surname": "Etternavn",
+        "firstname": "Fornavn",
+        "status": "Status(er)",
+        "next-page": "Neste >",
+        "prev-page": "< Forrige",
+        "no-data": "Søk er utført, men det ble ikke funnet noen medlemmer"
+      },
+      "excel-download-link": "Last ned tabell som excel"
+    },
+    "search-details": {
+      "member-basic-details": {
+        "title": "Personalia",
+        "list-data": {
+          "age": "Alder",
+          "years": "år",
+          "born": "Født",
+          "dob": "Fødselsnummer",
+          "addresse": "Addresse",
+          "date-of-death-dsf": "Dødsdato fra DSF",
+          "d-number": "D-nummer",
+          "invalid-nin-msg": "ugyldig fødselsnummer",
+          "missing-nin-msg": "Mangler personnummer"
+        }
+      },
+      "member-medlemskap-details": {
+        "title": "Medlemskap",
+        "list-data": {
+          "member-no": "Medlemsnr",
+          "company-name": "Foretak",
+          "grouping-name": "Gruppering"
+        }
+      },
+      "comment": {
+        "listing":{
+          "title": "Kommentarer",
+          "success-title": "Suksess",
+          "list-data": {
+            "comment": "Kommentar",
+            "date": "Dato",
+            "crm-case": "CRM-saker",
+            "created-date": "Registrert av",
+            "delete-confirm-msg": "Er du sikker på at du ønsker å slette denne kommentaren? (Evt. kopi fra CRM-sak vil vises frem til saken lukkes.)",
+            "confirm-text": "Bekrefte",
+            "delete-text": "Delete",
+            "please-wait": "Vennligst vent....."
+          },
+          "add-comment-text": "Legg til kommentar",
+          "delete-success": "Kommentar slettet med hell",
+          "add-success": "Kommentar lagt til med hell"
+        },
+        "add": {
+          "title": "Legg til kommentar på person",
+          "close": "Lukk",
+          "ticket-number": "Saksnummer",
+          "case-type": "Sakstype",
+          "created-on": "Opprettet",
+          "save-person": "Lagre på person",
+          "save": "Lagre"
+        }
+      },
+      "pension-calculation": {
+        "title": "Pensjonsberegninger",
+        "withdrawal-no": "Uttaksnr",
+        "withdrawal-grad": "Withdrawal Grad",
+        "list-data": {
+          "calculation-date": "Beregningsdato",
+          "calculation-type": "Beregningstype",
+          "gross-pension": "Bruttopensjon",
+          "net-pension": "Nettopensjon",
+          "child-benefit": "Barnetillegg",
+          "pensionable-income": "Pensjonsgrunnlag",
+          "service-period-numerator": "Tjenestetidsteller",
+          "work-time-factor": "Arbeidstidsfaktor",
+          "service-period-denominator": "Tjenestetidsnevner"
+        }
+      },
+      "submitted-items": {
+        "title": "Innsendte saker",
+        "list-data": {
+          "registered-date": "Dato/tid",
+          "sla-date": "Klar til behandling",
+          "case-number": "Saksnummer",
+          "case-type-name": "Type",
+          "name-registered-by": "Registrert av",
+          "company-group": "Foretak/Gruppering"
+        },
+        "item-details": {
+          "view-details": "Se detaljer",
+          "details-of": "Details of",
+          "document-text": "Dokumenter",
+          "downloading-text": "Downloading.......",
+          "no-comments-text": "Ingen kommentarer på saken.",
+          "activity_heading": "Aktiviteter",
+          "sms_activity_name": "Sms",
+          "epost_activity_name": "Epost",
+          "from": "Fra",
+          "to": "Til",
+          "attachments": "Vedlegg",
+          "message": "Melding"
+        }
+      },
+      "benifits": {
+        "title": "Ytelser",
+        "list-data": {
+          "life-time": "Livsvarig",
+          "benefit": "Beløp",
+          "coverage-name": "Ytelse",
+          "benefit-name": "Type"
+        }
+      },
+      "pension-simulate": {
+        "title": "Enkel simulering av pensjon/tidlig pensjon",
+        "text1": "En eller flere simuleringer feilet for",
+        "text2": "hos",
+        "text3": "Viser simulert pensjon med pensjonsgrunnlag",
+        "table-data": {
+          "text4": "Simulert pensjon",
+          "text5": "Alternativ",
+          "text6": "Totalt årlig utbetaling"
+        }
+      },
+      "disability": {
+        "title": "Uførevedtak",
+        "list-data": {
+          "decision-code": "Vedtakskode",
+          "decision-text": "Beskrivelse"
+        }
+      },
+      "payment-note": {
+        "zero-documents": "Antall dokumenter for periode: 0",
+        "find-member-doument": "Finn medlemsdokumenter"
+      }
+    }
+  },
+  "general": {
+    "footer-html": "<p>Opphavsrett © Storebrand - Medlemsportalen leveres i samarbeid med Storebrand Pensjonstjenester AS.</p>",
+    "to-the-top-link-text": "Til toppen",
+    "formats": {
+      "age-format": "${age} år",
+      "date": {
+        "infinite": "Dags dato"
+      }
+    },
+    "unable-to-get-response": "Kan ikke få svar fra server",
+    "inactive-msg": "Du er inaktiv siden de siste 15 minuttene"
+  },
+  "nav": {
+    "title": "Beregn din pensjon",
+    "body-html": "Din pensjon beregnes på bakgrunn av total medlemstid i offentlig sektor. NAV har informasjon om din totale medlemstid.",
+    "link": {
+      "url": "https://www.nav.no/no/Person/Pensjon/Hva+kan+jeg+fa+i+pensjon",
+      "link-text": "Klikk her for å beregne alderspensjon"
+    }
+  },
+  "table-component": {
+    "rows-text": "rader",
+    "page-text": "Side",
+    "of-text": "av",
+    "previous-text": "< Forrige",
+    "next-text": "Neste >",
+    "no-data": "Ingen data",
+    "button": {
+      "show-all-props": "Vis alle ${totalRows} rader",
+      "show-newest-rows": "Vis kun 5 nyeste rader"
+    },
+    "see-more-data": "se mer av din lønnshistorikk"
+  },
+  "future-retirees":{
+    "future-retire-top": "Fremtidspensjonerte medlemmer",
+    "top-box-content": {
+      "title": "Pensjonsreformen",
+      "first-paragraph": "Pensjonsreformen trådte i kraft 1.januar 2011. Pensjonsreformen gir de ansatte mulighet til å starte utbetaling av pensjon fra 62 år fra folketrygden, AFP og tjenestepensjonsordningene.",
+      "second-paragraph": "Her kan du analysere bedriftens ansatteopplysninger som vi har registrert i våre systemer og se om og hvor mange av dine ansatte som kan benytte seg av muligheten til å starte fleksibelt uttak.",
+      "third-paragraph": "Lær mer om ",
+      "fourth-paragraph": "Tabellen under viser hvor mange av medlemmene i din kasse som har mulighet til å ta ut hel eller delvis pensjon de neste årene, regnet fra dagens dato."
+    },
+    "upcoming-retirees": "Kommende pensjonister i",
+    "table-heading": {
+      "age-group": "Aldersgruppe",
+      "months-12": "0-12 mnd",
+      "months-24": "12-24 mnd",
+      "months-36": "24-36 mnd"
+    },
+    "employees": "ansatte"
+  },
+  "status-change":{
+    "top-heading": "Søk på statusendringer",
+    "upcoming-retirees": "Kommende pensjonister i",
+    "first-paragraph": {
+      "heading": "Søk på statusendringer i periode",
+      "first-line": "Her kan du søke på statusendringer innenfor en gitt periode.",
+      "second-line": "Velg fra- og tildato, samt hvilke statuser du ønsker å søke på."
+    },
+    "table-heading": {
+      "memberNo": "Medlemsnr",
+      "birthDate": "Fødselsnummer",
+      "firstname": "",
+      "lastname": "",
+      "fullname": "Navn",
+      "fromStatusText": "Status fra",
+      "toStatusText": "Status til",
+      "nin": "",
+      "personNo": "",
+      "statusDate": "Dato"
+    },
+    "age-validation-error": "Aldersgruppen blir aldri negativ og maksimal alder vil ikke være større enn alderen"
+  },
+  "customer-details-status":{
+    "status-heading": "Statushistorikk",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "from": "Fra",
+      "to": "Til",
+      "status": "Status",
+      "enterprise": "Foretak",
+      "provission": "Ordning"
+    }
+  },
+  "member-recording": {
+    "recording-for-period": "Opptak av medlemmer i en periode",
+    "page-default-msg": "Ved søk på \"opptak i periode\" søker man må de medlemmer som ble registrert som medlemmer i pensjonskassen i et gitt tidsrom.",
+    "find-members": "Finn opptaksmedlemmer",
+    "find-recording-period": "Finn opptak i periode"
+  },
+  "customer-details-employment":{
+    "employment-heading": "Stillingshistorikk",
+    "no-record-msg" : "Ingen registrert stillingshistorikk.",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "from": "Fra",
+      "to": "Til",
+      "position-code": "Stillingskode",
+      "position-name": "Stillingsnavn",
+      "enterprise": "Foretak",
+      "grouping": "Gruppering"
+    }
+  },
+  "customer-details-agelimit":{
+    "agelimit-heading": "Aldersgrensehistorikk",
+    "no-record-msg" : "Ingen registrert Aldersgrensehistorikk.",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "from": "Fra",
+      "to": "Til",
+      "age-limit": "Aldersgrense",
+      "enterprise": "Foretak",
+      "provision": "Ordning"
+    }
+  },
+  "customer-pension-payment":{
+    "top-heading": "Utbetalingsbrev sendt til medlemmene",
+    "letter-sent-to-members": "Brev sendt til medlemmer",
+    "payment-heading": "Pensjonsutbetaling",
+    "no-record-msg" : "Ingen pensjonsutbetaling",
+    "fetch-records": "Klikk her for å se Pensjonsberegninger",
+    "table-exists-msg": "Ved differanse mellom pensjonsberegning og pensjonsutbetaling er det foretatt en manuell tilleggsberegning. Pensjonsutbetalingen viser korrekt ytelse.",
+    "table-label": {
+      "monthly-amount": "Månedlig beløp",
+      "type-of-pension": "Type pensjon",
+      "status-payment": "Status utbetaling",
+      "last-change": "Siste endring",
+      "changes-cause": "Endringsårsak",
+      "pension-grad": "Pensjonsgrad",
+      "review-date": "Etterprøvingsdato",
+      "payment-without-trial": "Utbetaling uten etterprøving"
+    }
+  },
+  "customer-details-earning":{
+    "earning-heading": "Opptjening",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "earnings-at-retirement-age": "Opptjening ved pensjonsalder",
+      "working-factor": "Arbeidstidsfaktor",
+      "enterprise": "Foretak"
+    }
+  },
+  "customer-details-salary":{
+    "salary-heading": "Lønnshistorikk",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "from": "Fra",
+      "to": "Til",
+      "part_percent": "Deltidsprosent",
+      "payment": "Lønn",
+      "fixed_addition": "Fast tillegg",
+      "enterprise": "Foretak",
+      "grouping": "Gruppering"
+    }
+  },
+  "customer-details-membership":{
+    "membership-heading": "Medlemstid",
+    "membership-message": "Beregningen er basert på de dataene du har tilgang til. Det kan eksistere medlemstid som ikke vises her.",
+    "table-heading": {
+      "member": "Medlemsnr",
+      "of_membership": "Medlemstid",
+      "average_part_time": "Gjennomsnittlig deltid",
+      "enterprise": "Foretak"
+    }
+  },
+  "document-archive": {
+    "headingTitle": "Dokumentarkiv",
+    "no-record-msg" : "Henting av pensjonsutbetaling feilet.",
+    "download": "Last ned",
+    "edit": "Rediger",
+    "mark-as-unread": "Marker som ulest",
+    "mark-as-read": "Marker som lest",
+    "updating": "oppdatering",
+    "downloading": "nedlasting",
+    "saving": "besparende...",
+    "upload-success-msg": "Dokumentet ble lastet opp",
+    "confirm-delete-msg": "Er du sikker på å bekrefte slettingen?",
+    "update-confirm-msg": "Dokumentet er oppdatert",
+    "update-heading": "Oppdater dokument",
+    "success": "Suksess",
+    "add-new": {
+      "upload-new-document": "Last opp nytt dokument",
+      "create-new-document": "Nytt dokument",
+      "title": "Tittel",
+      "description": "Beskrivelse",
+      "select-files-to-upload": "Velg filen(e) du ønsker å overføre",
+      "category": "Kategorier",
+      "enterprises": "Foretak",
+      "file-type": "Filtype",
+      "file-size": "Filstørrelse",
+      "save": "Lagre",
+      "cancel": "Avbryt",
+      "delete": "Slett"
+    },
+    "searchForm": {
+      "document-search": "dokument søk",
+      "search": "Søk",
+      "from-date": "Fra dato",
+      "to-date": "Till dato",
+      "categories": "Kategorier",
+      "status": "Status",
+      "number-per-page": "Antall pr. side",
+      "records-per-page": "Antall dokumenter per side",
+      "find-document": "Finn dokumenter",
+      "searching": "søker....",
+      "reset": "Reset",
+      "formDateToDateCompare": "Fra dato må du aldri være grater enn til dags dato"
+    },
+    "table-heading": {
+      "category": "Kategori",
+      "title": "Tittel",
+      "createdDate": "Opprettet",
+      "cratered-by": "Opprettet av",
+      "file-type": "Filtype",
+      "file-size": "Filstørrelse"
+    }
+  },
+  "my-profile": {
+    "my-profile": "Min profil",
+    "your-settings": "Dine innstillinger",
+    "form-alert": "Det er helt nødvendig å oppgi epost for arbeid, da det er denne adressen som vil bli brukt ved varslinger. Informasjon om behandling av personopplysninger.",
+    "change-password": "Bytt passord",
+    "verify-update": "Bekreft/oppdater",
+    "altering": "Forandre",
+    "read-system-messages": "Leste systemmeldinger",
+    "mobile": "Mobil",
+    "email-job": "E-post jobb",
+    "old-password": "Gammelt passord",
+    "new-password": "Nytt passord",
+    "new-passowrd-rule": "Nytt passord (minst 8 bokstaver)",
+    "confirm-password": "Bekreft passord",
+    "profile-update-success": "Profilen ble oppdatert",
+    "phone-invalid": "Telefonnummer er ikke gyldig",
+    "email-invalid": "E-post er ugyldig",
+    "redirect-to-home": "Organisasjonsliste",
+    "organization-listing-page": "Organisasjonsliste"
+  },
+  "chart-section": {
+    "welcome": "Velkommen",
+    "loggedin-msg": "Du er logget inn for ",
+    "no-series-data": "Ingen seriedata funnet!",
+    "please-wait": "Vennligst vent...",
+    "members-by-age": "Medlemmer fordelt på alder",
+    "see-historical-data": "Se historiske data",
+    "last-period": "Siste periode",
+    "total-age": "total alder",
+    "y-members-age": "Antall",
+    "x-age-group": "Aldersgruppe",
+    "members-by-status": "Medlemmer fordelt på status",
+    "y-member-status": "Antall",
+    "x-member-status": "Status",
+    "status-including-posted": "Medlemmer fordelt på status inkludert oppsatte",
+    "died-in-period": "Antall døde i perioden",
+    "y-died-in-period": "Antall",
+    "x-died-in-period": "Periode",
+    "pensioners-85-years-old": "Antall pensjonister med 85-årsregel",
+    "y-85-years-old": "Antall",
+    "x-85-years-old": "Periode",
+    "numbers-afp-in-period": "Antall nye AFP i periode",
+    "y-afp-in-period": "Antall",
+    "x-afp-in-period": "Periode",
+    "new-disablities-by-age": "Nye uføre fordelt på alder",
+    "y-age-disablity": "Antall",
+    "x-age-disablity": "Aldersgruppe",
+    "things-to-crm": "Saker til CRM",
+    "data-settlement-crm": "oppgjør CRM",
+    "data-service-cases-crm": "Tjenestesaker CRM",
+    "y-crm-things": "Antall",
+    "x-crm-things": "Periode",
+    "of-total": "av totalt",
+    "intervall-selection": "Intervallvalg",
+    "all-intervall": "Alle intervaller",
+    "3-months": "3 måneder",
+    "6-months": "6 måneder",
+    "active": "Aktive",
+    "retirees": "Pensjonister",
+    "disability": "Uførepensjonister",
+    "disablity-historic-data": "Uførepensjonister",
+    "children-pensioners": "Barnepensjonister",
+    "spouse": "Ektefellepensjonister",
+    "age2030": "20-30 år",
+    "age3040": "30-40 år",
+    "age4050": "40-50 år",
+    "age5060": "50-60 år",
+    "age6070": "60-70 år",
+    "age7080": "70-80 år",
+    "age8090": "80-90 år",
+    "age90100": "90-100 år",
+    "age100": "100 og over"
+  },
+  "ajourhold" :{
+    "mailSubject": "Ny UNI-fil be lastet opp i Kundeportalen",
+		"mailBody": "Org: {0} \nIgnorer denne e-posten hvis det ikke er din kunde som UNI-fil gjelder.",
+    "empty-list": "Listen er tom",
+    "failed": "mislyktes",
+    "event-summery": {
+      "events": "Hendelser",
+      "total-event" : "Totalt antall hendelser",
+      "active-events": "Aktive hendelser",
+      "ignored-events" : "Ignorerte hendelser",
+      "unique-person" : "Unike personer",
+      "event-type": "Antall per type hendelse",
+      "salary-adjustments" : "Lønnsjusteringer",
+      "enrollments": "Innmeldinger",
+      "resignations": "Utmeldinger",
+      "unknown": "Ukjent/Ugyldig",
+      "number-per-status": "Antall pr status",
+      "done": "Utført",
+      "executed-earlier": "Utført tidligere",
+      "untreated": "Ubehandlet",
+      "error": "Feil"
+    },
+    "new-update": {
+      "top-text": {
+        "first-line": "Din e-post er satt til test.Moan@stb-noreply.no. Meldinger kan sendes til denne e-posten hvis den sendte filen er utilstrekkelig.",
+        "last-line": "Hvis du vil endre e-postadressen din, kan du gjøre det i Min profil."
+      },
+      "receipt-submitted-update" : "Kvittering for innsendt ajourhold",
+      "updated-submitted": "Oppdateringen din er sendt inn.",
+      "case-type": "Sakstype",
+      "comment": "Kommentar",
+      "select-files-to-transfer": "Velg filen(e) du ønsker å overføre",
+      "case-reference": "Referansenummer for sak",
+      "posted-update": "Se innsendt ajourhold",
+      "file-upload-msg": {
+        "first-line-large-file": "Vi gjør oppmerksom på at innsending av store filer vil kunne ta noe tid.",
+        "last-line-large-file": "Du vil få tilbakemelding når din henvendelse er behandlet."
+      },
+      "send": "Sende",
+      "sending": "Sende...",
+      "upload-attach-file-msg": "Laster opp vedleggsfiler.....",
+      "request-processing-msg": "Behandler forespørselen din....",
+      "error-file-upload": "Feil ved filopplasting.",
+      "server-error-file-upload": "Serverfeil i filopplasting. Vær så snill, prøv på nytt."
+    },
+    "uni-upload": {
+      "top-msg": "Her kan du laste opp UNI-fil for direkte behandling. En del av filen vil behandles automatisk og en del av filen vil utføres manuelt av saksbehandler i etterkant.",
+      "success-title": "Suksess",
+      "case-generated-success": "saksnummer @(result) er blitt generert",
+      "select-file-order": "Velg ordning filen gjelder for",
+      "grouping": "Gruppering",
+      "description": "Beskrivelse",
+      "select-file-transfer": "Velg filen du ønsker å overføre",
+      "upload": "Last opp",
+      "treatment": "Behandling....",
+      "upload-attach-file-msg": "Laster opp vedleggsfiler.....",
+      "request-processing-msg": "Behandler forespørselen din....",
+      "error-file-upload": "Feil ved filopplasting.",
+      "server-error-file-upload": "Serverfeil i filopplasting. Vær så snill, prøv på nytt.",
+      "uni-file-upload-success": "UNI-filen er lastet opp."
+    },
+    "import-member": {
+      "age": "Alder",
+      "birth-number": "Fødselsnummer",
+      "not-valid": "Ikke gyldig",
+      "ignored": "Ignorert",
+      "ignore": "Ignorer",
+      "date": "Dato",
+      "event": "Hendelse",
+      "payment": "Lønn",
+      "fixed-addition": "Fast tillegg",
+      "part-time-percentage": "Deltids- prosent",
+      "age-limit": "Alders- grense",
+      "equality-code": "Stillings- kode",
+      "info": "Info",
+      "event-data-add-success": "Hendelsesdata er vellykket oppdatert",
+      "updates-to-update": "Ajourhendelser til ajourholdsfil",
+      "member": "Medlemsnr",
+      "last-calculation-date": "Siste beregningsdato",
+      "member-validation": "Medlemsvalidering",
+      "edit": "Rediger",
+      "edit-event": "Rediger hendelse",
+      "event-no": "Hendelsesnummer",
+      "event-date": "Hendelsesdato",
+      "event-code": "Hendelseskode",
+      "t-ins": "T-tillegg",
+      "part-percent": "Deltidsprosent",
+      "position-code": "Stillingskode",
+      "limit-age": "Aldersgrense",
+      "comment": "Kommentar",
+      "updating": "Oppdatering....",
+      "update": "Oppdater",
+      "cancel": "Avbryt",
+      "perform-events": "Utfør hendelser",
+      "executed-earlier": "Utført tidligere",
+      "want-to-perform-event": "Vil du utføre hendelsene på",
+      "total-events-in-results": "Det er @(result) behandlbare hendelser for medlemmet.",
+      "treatment": "Behandling....",
+      "yes": "Ja",
+      "no": "Nei",
+      "treatmentedit": "Rediger"
+    },
+    "posted-update": {
+      "from-date": "Fra Dato",
+      "to-date": "Till dato",
+      "searching": "søker....",
+      "submitted-items": "Se innsendte saker",
+      "no-documents-attached": "Ingen dokumenter tilknyttet saken."
+    },
+    "import-report": {
+      "update-file-heading": "Behandle fil",
+      "error-loading-data": "Det feilet å hente ajourholdsrapport med ID @(result)",
+      "empty-list": "Listen er tom",
+      "change": "Endre",
+      "update": "Oppdater",
+      "cancel": "Avbryt",
+      "confirm": "Bekrefte",
+      "unable-to-download": "Ikke i stand til å laste ned. Prøv igjen senere.",
+      "back-to-submitted-items": "Tilbake til innsendte ajourholdsfiler.",
+      "free-capacity-process-immediately": "Filen blir behandlet straks det er ledig kapasitet",
+      "error-msg": "Feilmelding",
+      "comment": "Kommentar",
+      "no-comment": "Ingen kommentar",
+      "provision": "Ordning",
+      "grouping": "Gruppering",
+      "file": "Fil",
+      "open-and-download-file": "Åpne og last ned filen",
+      "save-locally": "og lagre lokalt",
+      "created-by": "Opprettet",
+      "updated-by": "Endret",
+      "status-updated-success-msg": "Status oppdateres vellykket",
+      "update-status": "Oppdater status",
+      "processing": "Behandling.....",
+      "treat-again": "Behandle på nytt",
+      "loading": "Laster.....",
+      "age": "Alder",
+      "firstname": "Fornavn",
+      "surname": "Etternavn",
+      "total-event" : "Antall hendelser",
+      "validation-message": "Valideringsmelding",
+      "national-identity": "Fødselsnummer",
+      "event-effect": "Hendelsevirkning",
+      "event-type": "Hendelsetype",
+      "display": "Visning",
+      "search": "Søk",
+      "member": "MedlemsNr",
+      "VALIDERT_OK" : "Stopp behandling",
+      "KLAR_FOR_BEHANDLING" :  "Start behandling",
+      "AVSLUTTET" : "Marker som avsluttet",
+      "SLETTET" : "Slett fil"
+    }
+  },
+  "file-uploadar": {
+    "select-file": "velg en fil"
+  },
+  "settlement": {
+    "mailSubject": "Kvittering for innsendt {0}.",
+    "mailBody": "Hei,<br><br> Det er sendt inn \"%1s\" for %2s via Kundeportalen til Storebrand Pensjonstjenester. <br><br> Meldingen er innsendt av %3s. <br><br> Vennlig hilsen <br> Storebrand Pensjonstjenester",
+    "posted-update": {
+      "title": "Postet oppdateringer",
+      "no-documents-attached": "Ingen dokumenter tilknyttet saken."
+    },
+    "selectDate": "Velg Dato",
+    "could-not-find-member-with-id": "Fant ikke medlem med dette fødselsnummeret",
+    "see-posted-lists": "Se Postet oppdateringer"
+  },
+  "mailbox": {
+    "mailSubject" : "Melding om dokument i kundeportalen",
+    "mailBody" : "%s har lastet opp et dokument for %s i kundeportalen som trenger din oppmerksomhet.<br>Dokumentet finner du under \"Postkasse\" i portalens hovedmeny.",
+    "top-content": {
+      "heading": "Postkasse",
+      "first-paragraph": "Her kan du laste opp dokumenter i portalen og gjøre de tilgjengelig for alle som kan logge på for dette foretaket. Dokumentene blir lagret i et arkivsystem og blir ikke \n knyttet opp mot saker i saksbehandlingssystemet.",
+      "kind-of-documents": "Hva slags dokumenter?",
+      "second-paragraph": "I utgangspunktet kan alle typer dokumenter som ikke faller inn under oppgjør og ajourhold lastes opp her. Vi ber likevel om at filstørrelsen begrenses til under 10MB og \n at dokumenter som har med ajourhold sendes inn via",
+      "update-page": "siden for ajourhold"
+    },
+    "msg-section": {
+      "new-message": "Ny melding",
+      "message": "Melding",
+      "email-notification": "Epost for varsling",
+      "attach-file": "Legg ved filer...",
+      "upload-msg-and-send-notification": "Last opp melding og send varsel",
+      "uploading-and-sending": "opplasting og sending..",
+      "restrict-access": "Begrens tilgang...",
+      "mail-sending-confirmation": "E-postbekreftelse",
+      "mail-sent-success": "E-post sendes vellykket",
+      "file-upload-msg": "Vi gjør oppmerksom på at opplasting av en stor fil vil kunne ta noe tid.",
+      "people-access-list-msg": "Velg personer som skal ha tilgang til dokumentet i listen under. Personene du velger vil også bli varslet \n om opplastingen. Hvis ingen velges vil alle få tillgang til dokumentet.",
+      "notification-email-msg": "Skriv inn en epostaddresse om du vil at noen skal bli varslet om denne opplastningen. Varselet vil \n inneholde beskrivelsen av filen og navnet ditt. Eks: 'motttaker@minpost.no' eller \n 'mottaker@minpost.no, olanordmann@dinpost.no'.",
+      "person-who-have-access": "Velg personer som skal ha tilgang til meldingen",
+      "mail-body-err": "Postkroppen må aldri være tom",
+      "select-file-err": "Vennligst velg en fil",
+      "notify-email-err": "E-post skal være i gyldig format"
+    },
+    "list-section": {
+      "uploaded-documents": "Opplastede dokumenter",
+      "sent": "Sendt",
+      "message": "Melding",
+      "attachments": "Vedlegg",
+      "delete-message": "Slett melding",
+      "attach-message": "Legg ved fil",
+      "delete-attachment": "Slett vedlegg",
+      "confirm-deleted-mail": "Opplastet vedlegg slettet med hell",
+      "add-attachment": "Velg fil",
+      "upload": "Last opp",
+      "uploading": "opplasting",
+      "upload-attachment-success-msg": "Opplastet nytt vedlegg vellykket"
+    }
+  },
+  "homepage-list-menu": {
+    "my-task": "Mine oppgaver",
+    "lookup-and-documents": "Oppslag og dokumenter",
+    "mailbox-heading": "Postkasse",
+    "front": "Forside",
+    "logout": "Logg ut",
+    "home" : "Startside",
+    "members": "Medlemmer",
+    "people-search": "Personsøk",
+    "future-retirees": "Oversikt over kommende pensjonister",
+    "search-status-changes": "Søk på statusendringer",
+    "recording-members-period": "Opptak av medlemmer i en periode",
+    "payment-notes-sent": "Utbetalingsbrev sendt til medlemmene",
+    "ajour_hold": "Ajourhold",
+    "new-update": "Nytt ajourhold",
+    "upload-uni-file": "Last opp UNI-fil",
+    "posted-updates": "Se innsendt ajourhold",
+    "automatic-update": "Automatisk ajourhold",
+    "settlement": "Oppgjør",
+    "message-about-afp": "Melding om AFP",
+    "retirement-pension-notification": "Melding om alderspensjon",
+    "notification-age-85-year-rule": "Melding om alder ved 85-årsregelen",
+    "new-message-after-disability": "Friskmelding etter arbeidsuførhet",
+    "notification-death": "Melding om dødsfall",
+    "request": "Forespørsel",
+    "posted-updates-settlement": "Se innsendte meldinger",
+    "private-disability-notification": "Melding om uførepensjon",
+    "retirement-pension-notification-private": "Melding om alderspensjon",
+    "disability-notification": "Melding om uførepensjon",
+    "change-disability-notification": "Melding om endring i arbeidsuførhet",
+    "submitted-messages": "Se innsendte meldinger",
+    "document": "Dokumentarkiv",
+    "mailbox": "Postkasse",
+    "contact": "Kontakt",
+    "newone": "AB",
+    "admin": "Admin",
+    "no-link-available": "Ingen lenke tilgjengelig"
+  },
+  "contact-page": {
+    "heading-kundeansvarlig": "Kundeansvarlig",
+    "bodytag-customer-service": "Salg og kundebetjening",
+    "footer-kundeansvarlig": "",
+    "heading-service-responsible": "Serviceansvarlig",
+    "bodytag-service-retirement": "Service Pensjonstjenester",
+    "footer-service-ph": "Telefon: 22 31 10 11",
+    "heading-settlement-responsible": "Oppgjørsansvarlig",
+    "bodytag-settlement-person-service": "Oppgjør Pensjonstjenester",
+    "footer-settlement-ph": "Telefon: 22 31 10 20",
+    "heading-mailing-address": "Postadresse: ",
+    "bodytag-mailing-address": "Storebrand Pensjonstjenester <br />Postboks 455 <br />1327 Lysaker",
+    "footer-mailing-address": ""
+  },
+  "admin": {
+    "manage-system-notification": {
+      "list-heading": "Systemmeldinger",
+      "list-desc": "Her kan du administrere systemmeldinger.",
+      "no-read-messages": "Ingen leste systemmeldinger",
+      "no-lists-data": "Ingen systemmeldinger",
+      "create-new-sys-noti": "Opprett nye systemvarsler",
+      "unable-to-save": "kan ikke lagre data",
+      "unable-to-delete": "kan ikke slette data",
+      "read-system-msg": "Leste systemmeldinger",
+      "confirm-delete-msg": "Er du sikker på at du ønsker å slette denne meldingen?",
+      "read-more": "Les mer",
+      "read-less": "Skjul full tekst",
+      "notification-saved": "Meldingen lagres vellykket"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col-md-4">
+    <h3>{{ 'member.people-search.title' | fmsText }}</h3>
+    <form [formGroup]="profileForm" (ngSubmit)="onSearchSubmit()">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-12">
+            <mat-form-field>
+              <input matInput type="text" formControlName="partOfLastName" placeholder="Last Name" />
+            </mat-form-field>
+            <!-- <div *ngIf="profileForm.get('partOfLastName').invalid && (profileForm.get('partOfLastName').dirty || profileForm.get('partOfLastName').touched)"
+                class="alert alert-danger">
+              <div *ngIf="profileForm.get('partOfLastName').errors.required">
+                Name is required.
+              </div>
+            </div> -->
+            <!-- <div *ngIf="formData.partOfLastName.invalid && (formData.partOfLastName.dirty || formData.partOfLastName.touched)"
+            class="text-danger">
+              <div *ngIf="formData.partOfLastName.errors.required">
+                Name is required.
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="row" formGroupName="nin">
+          <div class="col-md-12">
+            <mat-form-field>
+              <input matInput type="text" id="nationalIdentityNumber" formControlName="nationalIdentityNumber" placeholder="Fødselsnummer" />
+            </mat-form-field>
+            <div class="alert alert-danger"
+            *ngIf="ninInput.invalid && (ninInput.dirty || ninInput.touched)">
+              <div *ngIf="ninInput.errors.minlength || ninInput.errors.maxlength">Must be 11 digit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <mat-form-field>
+              <input matInput type="number" placeholder="Fra alder" id="fromAge" formControlName="fromAge" />
+            </mat-form-field>
+          </div>
+          <div class="col-md-5">
+            <mat-form-field>
+              <input matInput type="number" placeholder="Til alder" id="toAge" formControlName="toAge" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <mat-radio-group formControlName="hasConstructedNIN">
+              <mat-radio-button value="true">Ja</mat-radio-button>
+              &nbsp;&nbsp;
+              <mat-radio-button value="false">Nei</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+      </mat-card>
+      <br />
+      <mat-card>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- ==> {{ formData.hasAllStatus.value }} <====> {{ formData.hasAllStatus.checked }} <== -->
+            <!-- {{hasAllStatus}} -->
+            <mat-checkbox [(ngModel)]="hasAllStatus" [ngModelOptions]="{standalone: true}" (change)="getAllStatus($event)">Alle statuser</mat-checkbox>
+            <div *ngIf="!hasAllStatus">
+              <strong *ngIf="reloadStatus;else loadedStatusLists">Loading.....</strong>
+              
+              <ng-template #loadedStatusLists>
+                <app-checkboxlists
+                  name="includedStatusCodes"
+                  [list]="statusLists"
+                  [hasAllCheckedText]="true"
+                  (changeCheckedData)="getCheckedData($event)">
+                </app-checkboxlists>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+      <br />
+      <mat-card>
+        <div class="row">
+          <div class="col-md-12">
+            <strong *ngIf="loadingOrgLists;else loadedOrgLists">Loading.....</strong>
+            <ng-template #loadedOrgLists>
+              <app-checkboxlists
+                name="includedCompanies"
+                [list]="orgLists"
+                [hasAllCheckedText]="false"
+                (changeCheckedData)="getCheckedData($event)">
+              </app-checkboxlists>
+            </ng-template>
+          </div>
+        </div>
+      </mat-card>
+      <br />
+      <mat-card>
+        <div class="row">
+          <div class="col-md-12">
+            <mat-checkbox [(ngModel)]="hasAllGrouping" [ngModelOptions]="{standalone: true}" (change)="getAllGrouping($event)">Alle grupperinger</mat-checkbox>
+            <br />
+            <mat-checkbox formControlName="hasActiveCompanyGroup">Kun aktive i gruppering</mat-checkbox>
+          </div>
+          <div class="col-md-12">
+
+          </div>
+        </div>  
+      </mat-card>
+      <button type="submit" class="btn btn-default" [disabled]="profileForm.invalid">Submit</button>
+    </form>
+  </div>
+  <div class="col-md-8">
+    {{profileForm.value | json}}
+  </div>
+</div>
